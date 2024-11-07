@@ -26,7 +26,7 @@ RUN set -eux; \
 		dc_hide_mailname 'true' \
 		dc_local_interfaces '0.0.0.0 ; ::0' \
 		dc_other_hostnames '' \
-		dc_relay_nets '0.0.0.0/0' \
+		dc_relay_nets '0.0.0.0/0 ; ::0/0' \
 	;
 
 EXPOSE 25
